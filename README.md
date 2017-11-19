@@ -20,3 +20,6 @@ See the (r.sh to generate model,  and run it by examples/mnist/r.sh)
 
 ## Notes
 
+
+p.py is an experiment for `convert to pb`
+
