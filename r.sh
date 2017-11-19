@@ -7,11 +7,17 @@ echo $LD_LIBRARY_PATH
 
 
 function Attr(){
-rm out/d.npy out/c.py -rf
+rm out -rf
+mkdir out
+
 python convert.py /home/xyz/code/face-models/AttrNet/test_64.prototxt \
 --caffemodel=/home/xyz/code/face-models/AttrNet/AttrNet_v1.0.caffemodel  \
---data-output-path=./out/d.npy \
---code-output-path=./out/c.py
+--data-output-path=./out/attrnet.npy \
+--code-output-path=./out/attrnet.py
+
+# 
+echo "from .attrnet import AttrNet" > out/__init__.py
+
 }
 
 
