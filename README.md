@@ -15,11 +15,10 @@ The output consists of two files:
 
 ### Examples
 
-See the (r.sh to generate model,  and run it by examples/mnist/r.sh)
+
+./r.sh is an script for `convert the result to npy`
 
 
-## Notes
 
-
-p.py is an experiment for `convert the result to pb`
+./topb.sh is an script for `convert the npy to pb`
 
